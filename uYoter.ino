@@ -57,9 +57,6 @@ struct StoreStruct {
 // EEPROM configuration [stop]
 
 
-float BATT_R1 = 100000.0;
-float BATT_R2 = 10000.0;
-
 // main variables
 boolean ECUconnected = false;
 boolean carCharger = false;
@@ -81,13 +78,9 @@ uint8_t hazardOff[2] = { 1000,1000 };
  */
 int status = 1;
 
-
-// second battery
-float Batt2Vout = 0.0;
-float Batt2Vin  = 0.0;
-float Batt2R1 = 100000.0;
-float Batt2R2 = 10000.0;
-int Batt2 = 0;
+// 12v battery resistors
+float BATT_R1 = 100000.0;
+float BATT_R2 = 10000.0;
 
 void setup() {
 	
