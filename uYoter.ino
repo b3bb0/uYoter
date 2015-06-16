@@ -9,11 +9,11 @@
  *  +     4   6    I/O    12v 4 Channel Wireless Remote (on switch 2) & CAR door LOCK switch
  *  +     5  11     O     SSR (solid state relay) to self battery charger
  *  +     6  12     O     SSR (solid state relay) to hazard flashers AKA 4 blinkers
- *  ?     7  13     I     Connected to the ECU (Engine Control Unit)
- *  -     8  17     O     SSR fridge
- *  -    A0  23     I     12v first battery voltage check http://www.electroschematics.com/9351/arduino-digital-voltmeter/
- *  -    A1  24     I     2nd second battery voltage check
- *  -    A5  28     I     fridge thermometer
+ *  +     7  13     I     Connected to the ECU (Engine Control Unit)
+ *  -     8  17     O     SSR fridge (peltier cell)
+ *  +    A0  23     I     12v first battery voltage check http://www.electroschematics.com/9351/arduino-digital-voltmeter/
+ *  +    A1  24     I     12v second battery voltage check
+ *  +    A5  28     I     fridge thermometer
  */
 #include <avr/sleep.h>
 #include <EEPROM.h>
